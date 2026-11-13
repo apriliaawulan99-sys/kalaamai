@@ -1,0 +1,3 @@
+"use client";
+import { useEffect } from "react";import { AlertTriangle,RefreshCw } from "lucide-react";
+export default function ErrorPage({reset}:{error:Error&{digest?:string};reset:()=>void}){useEffect(()=>{},[]);return <main className="flex min-h-[60vh] items-center justify-center px-5"><div className="surface max-w-lg p-8 text-center"><AlertTriangle size={28} className="mx-auto text-amber-600"/><h1 className="mt-4 text-2xl font-black">Halaman mengalami kendala</h1><p className="mt-2 text-sm leading-6 text-slate-500">Coba muat ulang halaman. Jika masalah berulang, periksa log server dan konfigurasi Supabase.</p><button onClick={()=>reset()} className="btn-primary mt-5"><RefreshCw size={16}/> Coba lagi</button></div></main>}

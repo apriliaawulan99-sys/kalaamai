@@ -1,0 +1,1 @@
+import type { Metadata } from "next";import { AuthForm } from "@/components/auth-form";export const metadata:Metadata={title:"Pemulihan kata sandi"};export default function ForgotPasswordPage(){return <main className="flex min-h-screen items-center justify-center px-5 py-10"><AuthForm mode="forgot"/></main>}
